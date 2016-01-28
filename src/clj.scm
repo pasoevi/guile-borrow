@@ -13,19 +13,29 @@
      (let ((var val)) exp exp* ...))))
 
 ;; If test is true, evaluates then with binding-form bound to the
-;; value of
-test, if not, yields else
+;; value of test, if not, yields else
 (define-syntax if-let
   (syntax-rules ()
     ((_ (binding value) then else)
      (let1 (binding value)
            (if binding then else)))))
 
-(if-let (x #t)
-        (display x)
-        #f)
+;; When test is true evaluates body with binding-form bound to the
+;; value of test
+(define-syntax when-let
+  (syntax-rules ()
+    ((_ (binding value) body ...)
+     (let1 (binding value)
+           (when binding body ...)))))
 
+;; a short-hand to (if (not something) ...)
+(define-syntax if-not
+  (syntax-rules ()
+    ((_ test then else)
+     (if (not test) then else))))
 
-(define when-let 0)
-(define if-not 0)
-(define when-not 0)
+;; Like when but reversed
+(define-syntax when-not
+  (syntax-rules ()
+    ((_ test body ...)
+     (when (not test) body ...))))
