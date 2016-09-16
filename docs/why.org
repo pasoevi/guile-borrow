@@ -7,7 +7,7 @@ about them. So why begin writing more about Macros in Guile?
 First of all, we have to think about the primary purpose of the Guile
 programming language. It is a kind of language for which ubiquity must
 be its main power - it has to be widely used, and it has to be
-familiar to many peoples. If one of the advantages of providing
+familiar to many people. If one of the advantages of providing
 extension language to large applications is that users can easily add
 functionality to it, then the extension language should be really
 ubiquitous, since otherwise the chance that the scripting language of
