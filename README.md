@@ -17,13 +17,6 @@ features will be implemented in forms of *Guile* extensions.
 
 # Examples
 ```scheme
-;; Provide a few clojure-inspired ideas to guile.
-
-(define-module (borrow clj)
-  #:export (if-let
-            when-let
-            if-not
-            when-not))
 
 ;; A clojure-like let
 (define-syntax let1
