@@ -16,7 +16,7 @@ forms of syntax macros. For that reason more complicated borrowed
 features will be implemented in forms of *Guile* extensions.
 
 # Examples
-```
+```scheme
 ;; Provide a few clojure-inspired ideas to guile.
 
 (define-module (borrow clj)
