@@ -2,9 +2,7 @@
 
 *guile-borrow* is a Guile library that borrows syntax and features from
 other Lisps, namely Racket and Clojure. The main purpose of this
-collection is to make Guile more familiar to other lisp programmers. As
-a primarily extension language, ubiquity must be its main power - it has
-to be familiar to many people.
+collection is to make Guile more familiar to other lisp programmers.
 
 *guile-borrow* is primarily a collection of features which are typically
 implemented using Macros but since not all syntactic constructs can be
